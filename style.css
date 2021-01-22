@@ -1,0 +1,761 @@
+
+
+/* Setting the Initial Values to 0 */
+body{
+    margin: 0;
+    font-family: sans-serif;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(30,30,30);
+    display: flex;
+}
+
+
+/* Creating a box-card on top of video playing. */
+.box-card-container{
+    position: absolute;
+    background-color:rgb(30,30,30);
+    height: 98%;
+    width: 98%;
+    margin: 1%;
+    display: block;
+}
+
+/* --------Actual CSS part begins here----------- */
+
+/* -----------NAVBAR-------------- */
+
+/* Navbar container */
+.navbar{
+    position: relative;
+    background-color:rgba(255,255,255,0.6);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+}
+
+/* Navbar Contents (from left to right): */
+/*  1. Ninja Studio Logo
+    2. Favourites
+    3. Input Bar
+    4. Notification Bell icon
+    5. User Logo */
+
+.navbar-logo img{
+    position: relative;
+    left: 10px;
+    top: 1px;
+    border-radius: 30px;
+}
+
+.navbar-fav{
+    position: absolute;
+    left: 20%;
+}
+
+.navbar-fav span{
+    text-transform: uppercase;
+    color: black;
+    font-weight: 800;
+    transition: 0.5s;
+}
+
+.navbar-fav span:hover{
+    font-size: 1.2rem;
+}
+
+.navbar-search{
+    position: absolute;
+    left: 45%;
+}
+
+.navbar-search input{
+    text-decoration: none;
+    border: none;
+    width: 25rem;
+    height: 2.5rem;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.navbar-search input:hover{
+    width: 30rem;
+}
+
+::placeholder{
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.navbar-search .fa-microphone{
+    position: relative;
+    left: -30px;
+    color: black;
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.navbar-search .fa-microphone:hover{
+    cursor: pointer;
+    transform: scale(2);
+}
+
+.navbar-search .fa-search{
+    position: relative;
+    right: -35px;
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.navbar-search .fa-search:hover{
+    cursor: pointer;
+    transform: scale(2);
+}
+
+.navbar-bell{
+    position: absolute;
+    left: 90%;
+    transform: scale(2);
+}
+
+/* Creating custom animation for Bell icon to indicate New Notification */
+
+@keyframes toggle{
+    from{
+        transform: scale(3);
+    }
+
+    50%{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(2);
+    }
+}
+.navbar-bell:hover{
+    cursor: pointer;
+    animation: toggle 1s ease-in-out 1;
+}
+
+.navbar-user{
+    position: absolute;
+    left: 96%;
+    transform: scale(2);
+}
+
+/* -------------NAVBAR END----------------------------- */
+
+/* ------------- MAIN --------------------------------  */
+
+/* Main will have 2 sections:
+                            1. Centre panel
+                            2. Aside bar for playlist */
+
+.main-container{
+    position: relative;
+    background-color:rgb(30,30,30);
+    height: 95%;
+    width: 100%;
+    top: 15px;
+    border-radius: 30px;
+    display: flex;
+    overflow: hidden;
+}
+
+
+/* ----- CENTRAL PANEL------- */
+.center-panel{
+    height: auto;
+    width: 70%;
+    position: relative;
+    background-color:rgb(30,30,30);
+    border-radius: 30px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+/* ------ Carousel css------- */
+.carousel-container{
+    position: relative;
+    border-radius: 30px;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: rgb(255, 209, 5) 3px 6px 6px 2px;
+}
+
+.carousel-container img{
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+
+#img-01{
+    position: relative;
+    transform: translateX(100px);
+    z-index: 50;
+    transition: 0.3s;
+}
+
+#img-01:hover{
+    transform: scale(1.2) translate(100px);
+    z-index: 52;
+}
+
+#img-02{
+    height: 550px;
+    position: relative;
+    z-index: 51;
+    transition: 0.3s;
+}
+
+#img-02:hover{
+    transform: scale(1.1);
+    z-index: 52;
+}
+
+#img-03{
+    position: relative;
+    transform: translateX(-100px);
+    z-index: 50;
+    transition: 0.3s;
+}
+
+#img-03:hover{
+    transform: scale(1.2) translate(-100px);
+    z-index: 52;
+}
+
+
+/* ------ Recently Played ---------- */
+.recently-played{
+    position: relative;
+    border-radius: 30px;
+    height: auto;
+    width: auto;
+    top: 1%;
+    background-color: black;
+    box-shadow: rgb(255, 209, 5) 3px 6px 6px 2px;
+    overflow-x: scroll;
+    
+}
+
+.recently-played-images{
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    
+    
+}
+
+.recently-played-images img{
+    padding: 10px;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.recently-played-images img:hover{
+    box-shadow: white  4px 8px;
+    transform: translateY(-15px);
+}
+
+/* ---------- MOOD ----------- */
+.mood{
+    position: relative;
+    height: auto;
+    width: 100%;
+    /* background-color: blueviolet; */
+    border-radius: 30px;
+    top: 2%;
+    box-shadow: rgb(255, 209, 5) 3px 6px 6px 2px;
+    overflow-x: scroll;
+}
+
+.mood-images{
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+}
+
+.mood-images img{
+    padding: 5px;
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.mood-images img:hover{
+    box-shadow: white  4px 8px;
+    transform: translateY(-15px);
+}
+
+/* Popular artists */
+
+.popular-artist{
+    position: relative;
+    height: 900px;
+    width: 100%;
+    background-color: black;
+    border-radius: 30px;
+    top: 3%;
+    box-shadow: rgb(255, 209, 5) 3px 6px 6px 2px;
+    overflow-x: scroll; 
+}
+
+.artist-container{
+    position: relative;
+    height: 150px;
+    width: 100%;
+    /* background-color: rgba(255,255,255,0.6); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border: black 1px solid;
+    transition: 0.2s;
+}
+
+.artist-container:hover{
+    background-color: rgba(255,255,255,0.6);
+}
+
+.artist-info{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.artist-info img{
+    position: relative;
+    width: 180px;
+    /* transform: scale(0.8); */
+    left: 80px;
+}
+
+.artist-info  span{
+    position: relative;
+    z-index: 1000;
+    font-size: 3.5rem;
+    color: white;
+    left: 35px;
+}
+
+.artist-info #artist-name{
+    position: relative;
+    font-size: 2rem;
+    left: 100px;
+    color: rgb(253, 218, 59);
+}
+
+.artist-options{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.artist-options span{
+    position: relative;
+    font-size: 1.8rem;
+    left: -50px;
+    transition: 0.3s;
+    color: rgb(255, 209, 5);
+}
+
+.artist-options span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+.artist-options i{
+    position: relative;
+    left: -25px;
+    transform: scale(2);
+    color: white;
+}
+
+.artist-options i:hover{
+    cursor: pointer;
+    color: white;
+}
+
+/* Latest - Eng */
+.latest-eng{
+    position: relative;
+    height: auto;
+    width: 100%;
+    /* background-color: teal; */
+    top: 4%;
+    border-radius: 30px;
+    display: block;
+    box-shadow: rgb(255, 209, 5) 3px 6px 6px 2px;
+}
+
+.eng-container{
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: top;
+    overflow: auto;
+    justify-content: space-between;
+}
+
+.eng-container img{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    transition: 0.5s;
+}
+
+.eng-container img:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+
+/* Latest - Hindi */
+
+.latest-hindi{
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: black;
+    top: 5%;
+    border-radius: 30px;
+    display: block;
+    box-shadow: rgb(255, 209, 5) 3px 6px 6px 2px;
+}
+
+.hin-container{
+    position: relative;
+    height: 350px;
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: top;
+    overflow: auto;
+    justify-content: space-between;
+}
+
+.hin-container img{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    transition: 0.5s;
+}
+
+.hin-container img:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+/* Bottom Music Player */
+.music-bar{
+    position: sticky;
+    bottom: 0;
+    height: 120px;
+    width: 100vw;
+    background-color: rgb(174,174,174);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000000;
+}
+
+/* Left Div */
+
+.left-div{
+    display: flex;
+    align-items: center;
+}
+.left-div img{
+    position: relative;
+    left: 20%;
+    transform: scale(0.4);
+    border-radius: 50%;
+}
+.music-bar-text span{
+    display: block;
+}
+.left-div span{
+    position: relative;
+    top: -12px;
+    left: 20px;
+    font-size: 25px;
+}
+
+#artist-name{
+    position: relative;
+    top: 0px;
+    font-size: 20px;
+}
+
+.left-div .fa-heart{
+    position: relative;
+    transform: scale(2);
+    left: 50px;
+}
+
+.left-div .fa-ban{
+    position: relative;
+    transform: scale(2);
+    left: 80px;
+}
+
+/* Mid Div */
+.mid-div{
+    position: relative;
+    place-items: middle;
+}
+.controls{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.controls i{
+    position: relative;
+    font-size: 20px;
+    transform: scale(1.2);
+}
+
+#slider {
+    position: relative;
+	width: 30vw;
+	font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 25px;
+}
+/* ////////// */
+.time {
+    font-size: 1.5rem;
+	margin: 0px 20px;
+}
+
+/* adjusting the slider for better visuals */
+.slidecontainer {
+	width: 100%;
+}
+/* for audio and main center player */
+.slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 5px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.5;
+	-webkit-transition: 0.2s;
+	transition: opacity 0.2s;
+}
+/* hover effect for the slider */
+.slider:hover {
+	opacity: 1;
+}
+/* these are for adjusting the dimensions and default styling of the long-slider */
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	background: #007bff;
+	cursor: pointer;
+}
+/* this is the circular thumb, which can be moved across the div */
+.slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	background: #4caf50;
+	cursor: pointer;
+}
+
+/* Right-div */
+.right-div{
+    position: relative;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-div i{
+    transform: scale(2);
+}
+
+/* Playlist Queue */
+.playlist{
+    height: auto;
+    width: 30%;
+    margin-left: 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(255,255,255,0.2);
+    border-radius: 30px;
+}
+
+.queue-and-dropdown{
+    display: flex;
+    align-items: center;
+}
+.dropbtn {
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+  
+.queue-and-dropdown i{
+    position: relative;
+    left: 20px;
+    transform: scale(2);
+    color: white;
+}
+.playlist-title{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    border-radius: 30px;
+    border-bottom: rgb(255, 209, 5) 1px solid;
+}
+
+#hash{
+    position: relative;
+    left: 30px;
+    font-size: 30px;
+    color: white;
+}
+
+#title{
+    position: relative;
+    left: 15%;
+    font-size: 30px;
+    color: white;
+}
+
+#timer{
+    position: absolute;
+    right: 50px;
+    font-size: 20px;
+    color: white;
+}
+
+.playlist-card{
+    position: relative;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    border-radius: 30px;
+    border-bottom: 1px solid rgb(255, 209, 5);
+    transition: 0.4s;
+}
+
+.playlist-card:hover{
+    cursor: pointer;
+    background-color: black;
+    height: 190px;
+}
+
+.song-info img:hover{
+    height: 170px;
+}
+
+
+.song-info{
+    display: flex;
+    align-items: center;
+}
+
+.song-info img{
+    position: relative;
+    height: 60px;
+    border-radius: 50%;
+    left: 60px;
+    transition: 0.4s;
+}
+
+#song-name{
+    position: relative;
+    width: auto;
+    color: white;
+    font-size: 22px;
+    left: 70px;
+}
+
+/* Text Classes */
+.text{
+    font-size: 1.7rem;
+    color:white;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.caption-text{
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 600;
+    text-transform: bold ;
+    text-align: center;
+}
+
+

@@ -1,0 +1,224 @@
+
+
+.single-large{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    border-radius: 30px;
+    background-color: whitesmoke;
+    display: flex;
+    background-image: linear-gradient(to right,#F7CA08,rgb(30,30,30));
+}
+
+.large-img{
+    position: relative;
+    height: 600px;
+    width: 30%;
+    overflow: hidden;
+}
+
+.large-img img{
+    position: relative;
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+.large-img-desc{
+    position: relative;
+    height: 600px;
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    
+}
+.top-div {
+    position: relative;
+    top: 0;
+}
+.top-div h1{
+    color: white;
+    position: relative;
+    left: 5%;
+    font-size: 4rem;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.top-div h4{
+    color: white;
+    position: relative;
+    left: 5%;
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+
+.top-div p{
+    color: white;
+    width: 60%;
+    position: relative;
+    left: 5%;
+    font-size: 1.4rem;
+}
+
+.middle-div{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    display: inline;
+    /* background-color: violet; */
+}
+
+.middle-div button{
+    position: relative;
+    left: 5%;
+    width: 15%;
+    height: 80px;
+    color: white;
+    font-size: 1.4rem;
+    background-color: black;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.middle-div button:hover{
+    cursor: pointer;
+    transform: scaleX(1.3) scaleY(1.3);
+}
+
+.middle-div span{
+    color: white;
+    width: 60%;
+    position: relative;
+    left: 5%;
+    font-size: 1.4rem;
+    top: 10px;
+}
+
+#follow{
+    position: relative;
+    left: 8%;
+    top: 0;
+}
+
+.single-next-songs{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: block;
+    top: 1%;
+    
+}
+
+.single-song{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to right,#F7CA08,rgb(30,30,30));
+    margin-top: 10px;
+    margin-bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.single-song:hover{
+    cursor: pointer;
+    height: 150px;
+    background-image: linear-gradient(to left,#F7CA08,rgb(30,30,30));
+    border-radius: 50px;
+}
+
+.info{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.info #num{
+    position: relative;
+    left: 20px;
+    font-size: 2rem;
+    color: white;
+    padding-right: 20px;
+    border-right: black 3px solid;
+}
+
+.info #name{
+    position: relative;
+    left: 80px;
+    color: white;
+    font-size: 1.8rem;
+}
+.info img{
+    position: relative;
+    left: 60px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.heart-plus{
+    position: relative;
+    padding-right: 90px;
+}
+.heart-plus i{
+    position: relative;
+    color: white;
+    transform: scale(2);
+    padding-left: 80px;
+}
+
+#similar-img{
+    position: relative;
+    left: 25px;
+}
+
+#similar-name{
+    position: relative;
+    left: 40px;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.similar-heart-plus i{ 
+    position: relative;
+    color: white;
+    transform: scale(1.5);
+    right: 15px;
+    padding-right: 20px;
+}
+
+.similar-text{
+    font-size: 1.7rem;
+    color:white;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 140px;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

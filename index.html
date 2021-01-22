@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="main-screen-responsive.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="box-card-container">
+            <div class="navbar"> 
+                <div class="navbar-logo">
+                    <img src="Assets/Ninja-Studio-logo.png" alt="">
+                </div>
+                <div class="navbar-fav">
+                    <span>Favourites</span>
+                </div>
+                <div class="navbar-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for Music">
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <div class="navbar-bell">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <div class="navbar-user">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+            <div class="main-container">
+                <section class="center-panel"> 
+                    <div class="carousel-container">
+                        <img src="Assets/Album Cover/skrillex.png" alt="" id="img-01">
+                        <img src="Assets/Album Cover/Travis Scott.jpg" alt="" id="img-02">
+                        <img src="Assets/Album Cover/Coldplay-01.jpg" alt="" id="img-03"> 
+                    </div>
+                    <div class="recently-played">
+                        <h2 class="text">Recently Played</h2>
+                        <div class="recently-played-images">
+                            <a href="single-page.html">
+                                <figure>
+                                    <img src="Assets/Album Cover/rp-01.jpg" alt="">
+                                    <figcaption class="caption-text">
+                                        What we know about Love
+                                    </figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="single-page.html">
+                                <figure>
+                                    <img src="Assets/Album Cover/rp-02.png" alt="">
+                                    <figcaption class="caption-text">
+                                        Better Together
+                                    </figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="single-page.html">
+                                <figure>
+                                    <img src="Assets/Album Cover/rp-03.jpg" alt="">
+                                    <figcaption class="caption-text">
+                                        Watermelon Sugar
+                                    </figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="single-page.html">
+                                <figure>
+                                    <img src="Assets/Album Cover/rp-04.png" alt="">
+                                    <figcaption class="caption-text">
+                                        Leviatating (feat. DaBaby)
+                                    </figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="single-page.html">
+                                <figure>
+                                    <img src="Assets/Album Cover/rp-05.jpg" alt="">
+                                    <figcaption class="caption-text">
+                                        Goosebumps
+                                    </figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="single-page.html">
+                                <figure>
+                                    <img src="Assets/Album Cover/rp-06.jpg" alt="">
+                                    <figcaption class="caption-text">
+                                        I'm so Tired
+                                    </figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="single-page.html">
+                                <figure>
+                                    <img src="Assets/Album Cover/rp-07.png" alt="">
+                                    <figcaption class="caption-text">
+                                        The Plan
+                                    </figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="single-page.html">
+                                <figure>
+                                    <img src="Assets/Album Cover/rp-08.jpeg" alt="">
+                                    <figcaption class="caption-text">
+                                        Still don't know my name
+                                    </figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="single-page.html">
+                                <figure>
+                                    <img src="Assets/Album Cover/rp-09.png" alt="">
+                                    <figcaption class="caption-text">
+                                        Yummy
+                                    </figcaption>
+                                </figure>
+                            </a>
+
+                            <a href="single-page.html">
+                                <figure>
+                                    <img src="Assets/Album Cover/rp-10.png" alt="">
+                                    <figcaption class="caption-text">
+                                        Blinding Lights
+                                    </figcaption>
+                                </figure>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="mood">
+                        <h2 class="text">Mood</h2>
+                        <div class="mood-images">
+                            <figure>
+                                <img src="assets/Album Cover/mood-1.jpg" alt="">
+                                <figcaption class="caption-text">Workout</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="assets/Album Cover/mood-02.jpg" alt="">
+                                <figcaption class="caption-text">Party</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="assets/Album Cover/mood-03.jpeg" alt="">
+                                <figcaption class="caption-text">Relax</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="assets/Album Cover/mood-04.jpg" alt="">
+                                <figcaption class="caption-text">Chill</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="assets/Album Cover/mood-05.jpg" alt="">
+                                <figcaption class="caption-text">Study</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="assets/Album Cover/mood-06.webp" alt="">
+                                <figcaption class="caption-text">Sleep</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="popular-artist">
+                        <h2 class="text">Popular Artists of 2020</h2>
+                        <div class="artist-container">
+                            <div class="artist-info">
+                                <span>1.</span>
+                                <img src="assets/Album Cover/pa-1.jpg" alt="">
+                                <span id="artist-name">Post Malone</span>
+                            </div>
+                            <div class="artist-options">
+                                <span id="view-playlist">View playlist</span>
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="artist-container">
+                            <div class="artist-info">
+                                <span>2.</span>
+                                <img src="assets/Album Cover/pa-2.jpg" alt="">
+                                <span id="artist-name">The Weeknd</span>
+                            </div>
+                            <div class="artist-options">
+                                <span id="view-playlist">View playlist</span>
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="artist-container">
+                            <div class="artist-info">
+                                <span>3.</span>
+                            <img src="assets/Album Cover/pa-3.jpg" alt="">
+                            <span id="artist-name">Roddy Ricch</span>
+                            </div>
+                            <div class="artist-options">
+                                <span id="view-playlist">View playlist</span>
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="artist-container">
+                            <div class="artist-info">
+                                <span>4.</span>
+                                <img src="assets/Album Cover/pa-4.jpg" alt="">
+                                <span id="artist-name">DaBaby</span>
+                            </div>
+                            <div class="artist-options">
+                                <span id="view-playlist">View playlist</span>
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="artist-container">
+                            <div class="artist-info">
+                                <span>5.</span>
+                                <img src="assets/Album Cover/pa-5.jpg" alt="">
+                                <span id="artist-name">Drake</span>
+                            </div>
+                            <div class="artist-options">
+                                <span id="view-playlist">View playlist</span>
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="artist-container">
+                            <div class="artist-info">
+                                <span>6.</span>
+                                <img src="assets/Album Cover/pa-6.jpg" alt="">
+                                <span id="artist-name">Juice WRLD</span>
+                            </div>
+                            <div class="artist-options">
+                                <span id="view-playlist">View playlist</span>
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="artist-container">
+                            <div class="artist-info">
+                                <span>7.</span>
+                                <img src="assets/Album Cover/pa-7.jpg" alt="">
+                                <span id="artist-name">Lil Baby</span>
+                            </div>
+                            <div class="artist-options">
+                                <span id="view-playlist">View playlist</span>
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="artist-container">
+                            <div class="artist-info">
+                                <span>8.</span>
+                                <img src="assets/Album Cover/pa-8.jpg" alt="">
+                                <span id="artist-name">Harry Styles</span>
+                            </div>
+                            <div class="artist-options">
+                                <span id="view-playlist">View playlist</span>
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="artist-container">
+                            <div class="artist-info">
+                                <span>9.</span>
+                                <img src="assets/Album Cover/pa-9.jpg" alt="">
+                                <span id="artist-name">Taylor Swift</span>
+                            </div>
+                            <div class="artist-options">
+                                <span id="view-playlist">View playlist</span>
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="artist-container">
+                            <div class="artist-info">
+                                <span id="tenth">10.</span>
+                                <img src="assets/Album Cover/pa-10.jpg" alt="">
+                                <span id="artist-name">Pop Smoke</span>
+                            </div>
+                            <div class="artist-options">
+                                <span id="view-playlist">View playlist</span>
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-eng">
+                        <h2 class="text">Latest English</h2>
+
+                        <div class="eng-container">
+                            <figure>
+                                <img src="assets/Album Cover/le-1.png" alt="">
+                                <figcaption class="caption-text">Happiness - Little Mix</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="assets/Album Cover/le-2.png" alt="">
+                                <figcaption class="caption-text">Baby I'm Jealous</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="assets/Album Cover/le-3.jpg" alt="">
+                                <figcaption class="caption-text">Meant For</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="assets/Album Cover/le-4.jpeg" alt="">
+                                <figcaption class="caption-text">Commander In Chief</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="assets/Album Cover/le-5.jpeg" alt="">
+                                <figcaption class="caption-text">i don't wanna like you yet</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="assets/Album Cover/le-6.jpg" alt="">
+                                <figcaption class="caption-text">Cotton Candy</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="latest-hindi">
+                        <h2 class="text">Latest Hindi</h2>
+
+                        <div class="hin-container">
+
+                            <figure>
+                                <img src="Assets/Album Cover/lh-1.jpg" alt="">
+                                <figcaption class="caption-text">
+                                    Teri Aakhon Mein
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="assets/Album Cover/lh-2.jpg" alt="">
+                                <figcaption class="caption-text">
+                                    Taaron Ke Sheher
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="Assets/Album Cover/lh-3.jpg" alt="">
+                                <figcaption class="caption-text">
+                                    Baby Girl
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="Assets/Album Cover/lh-4.jpg" alt="">
+                                <figcaption class="caption-text">
+                                    Gucci
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="Assets/Album Cover/lh-5.jpg" alt="">
+                                <figcaption class="caption-text">
+                                    Sunn Zara
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="Assets/Album Cover/lh-6.jpg" alt="">
+                                <figcaption class="caption-text">
+                                    Hum Tum
+                                </figcaption>
+                            </figure>
+
+
+
+                        </div>
+                    </div>
+                
+                </section>
+                <div class="playlist">
+                    <div class="queue-and-dropdown">
+                        <h2 class="text">Queue</h2>
+                        <div class="dropdown"> 
+                            <i class="fas fa-caret-down dropbtn"></i>
+                            <div class="dropdown-content">
+                                <a href="">Playlist</a>
+                                <a href="">Add to Favourites</a>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    <div class="playlist-title">
+                        <span id="hash">#</span>
+                        <span id="title">Title</span>
+                        <span id="timer"><i class="far fa-clock"></i></span>
+                    </div>
+
+                    <!-- Card 01 -->
+                    <div class="playlist-card">
+                        <div class="song-info">
+                            <span id="hash">1.</span>
+
+                            <img src="Assets/Album Cover/rp-01.jpg" alt="">
+
+                            <span id="song-name">
+                                What we know about love
+                            </span>
+
+                            <span id="timer">
+                                3:14
+                            </span>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <!-- Card 02 -->
+                    <div class="playlist-card">
+                        <div class="song-info">
+                            <span id="hash">2.</span>
+
+                            <img src="Assets/Album Cover/rp-02.png" alt="">
+
+                            <span id="song-name">
+                                Better Together
+                            </span>
+
+                            <span id="timer">
+                                3:28
+                            </span>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <!-- Card 03 -->
+                    <div class="playlist-card">
+                        <div class="song-info">
+                            <span id="hash">3.</span>
+
+                            <img src="Assets/Album Cover/rp-03.jpg" alt="">
+
+                            <span id="song-name">
+                                Watermelon Sugar
+                            </span>
+
+                            <span id="timer">
+                                4:24
+                            </span>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <!-- Card 04 -->
+                    <div class="playlist-card">
+                        <div class="song-info">
+                            <span id="hash">4.</span>
+
+                            <img src="Assets/Album Cover/rp-05.jpg" alt="">
+
+                            <span id="song-name">
+                                Goosebumps
+                            </span>
+
+                            <span id="timer">
+                                4:67
+                            </span>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Card 05 -->
+                    <div class="playlist-card">
+                        <div class="song-info">
+                            <span id="hash">5.</span>
+
+                            <img src="Assets/Album Cover/rp-06.jpg" alt="">
+
+                            <span id="song-name">
+                                i'm so Tired
+                            </span>
+
+                            <span id="timer">
+                                2:14
+                            </span>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Card 06 -->
+                    <div class="playlist-card">
+                        <div class="song-info">
+                            <span id="hash">6.</span>
+
+                            <img src="Assets/Album Cover/rp-08.jpeg" alt="">
+
+                            <span id="song-name">
+                                Still don't know my name
+                            </span>
+
+                            <span id="timer">
+                                5:46
+                            </span>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Card 07 -->
+                    <div class="playlist-card">
+                        <div class="song-info">
+                            <span id="hash">7.</span>
+
+                            <img src="Assets/Album Cover/le-1.png" alt="">
+
+                            <span id="song-name">
+                                Happiness Little Mix
+                            </span>
+
+                            <span id="timer">
+                                3:56
+                            </span>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Card 08 -->
+                    <div class="playlist-card">
+                        <div class="song-info">
+                            <span id="hash">8.</span>
+
+                            <img src="Assets/Album Cover/le-3.jpg" alt="">
+
+                            <span id="song-name">
+                                Meant For
+                            </span>
+
+                            <span id="timer">
+                                2:55
+                            </span>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Card 09 -->
+                    <div class="playlist-card">
+                        <div class="song-info">
+                            <span id="hash">9.</span>
+
+                            <img src="Assets/Album Cover/le-5.jpeg" alt="">
+
+                            <span id="song-name">
+                                I dont wanna like you yet
+                            </span>
+
+                            <span id="timer">
+                                2:34
+                            </span>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Card 10 -->
+                    <div class="playlist-card">
+                        <div class="song-info">
+                            <span id="hash">10.</span>
+
+                            <img src="Assets/Album Cover/rp-09.png" alt="">
+
+                            <span id="song-name">
+                                Yummy
+                            </span>
+
+                            <span id="timer">
+                                3:14
+                            </span>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Card 11 -->
+                    <div class="playlist-card">
+                        <div class="song-info">
+                            <span id="hash">11.</span>
+
+                            <img src="Assets/Album Cover/rp-10.png" alt="">
+
+                            <span id="song-name">
+                                Blinding Lights
+                            </span>
+
+                            <span id="timer">
+                                3:58
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Card 12 -->
+                    <div class="playlist-card">
+                        <div class="song-info">
+                            <span id="hash">12.</span>
+
+                            <img src="Assets/Album Cover/rp-10.png" alt="">
+
+                            <span id="song-name">
+                                Starboy
+                            </span>
+
+                            <span id="timer">
+                                3:14
+                            </span>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Card 13 -->
+                    <div class="playlist-card">
+                        <div class="song-info">
+                            <span id="hash">13.</span>
+
+                            <img src="Assets/Album Cover/rp-04.png" alt="">
+
+                            <span id="song-name">
+                                Leviatating
+                            </span>
+
+                            <span id="timer">
+                                2:58
+                            </span>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Card 14 -->
+                    <div class="playlist-card">
+                        <div class="song-info">
+                            <span id="hash">14.</span>
+
+                            <img src="Assets/Album Cover/rp-07.png" alt="">
+
+                            <span id="song-name">
+                                The Plan (Tenet 2020)
+                            </span>
+
+                            <span id="timer">
+                                5:10
+                            </span>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Card 15 -->
+                    <div class="playlist-card">
+                        <div class="song-info">
+                            <span id="hash">15.</span>
+
+                            <img src="Assets/Album Cover/lh-3.jpg" alt="">
+
+                            <span id="song-name">
+                                Baby Girl
+                            </span>
+
+                            <span id="timer">
+                                1:56
+                            </span>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Card 16 -->
+                    <div class="playlist-card">
+                        <div class="song-info">
+                            <span id="hash">16.</span>
+
+                            <img src="Assets/Album Cover/lh-4.jpg" alt="">
+
+                            <span id="song-name">
+                                Gucci
+                            </span>
+
+                            <span id="timer">
+                                3:22
+                            </span>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="music-bar">
+            <div class="left-div">
+                <img src="assets/Album Cover/rp-04.png" alt="">
+                <div class="music-bar-text">
+                    <span>Leviatating</span>
+                    <span id="artist-name">Dua Lipa</span>
+                </div>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-ban"></i>
+            </div>        
+            <div class="mid-div">
+                <div class="controls">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-backward"></i>
+                    <i class="fas fa-play"></i>
+                    <i class="fas fa-forward"></i>
+                    <i class="fas fa-redo-alt"></i>
+                </div>
+                <div id="slider">
+                    <!-- current time -->
+                    <div class="time">
+                        1:17
+                    </div>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                    </div>
+                    <!-- total time -->
+                    <div class="time">
+                        2:48
+                    </div>
+                </div>
+            </div>
+            <div class="right-div">
+                
+                    <div>
+                        <i class="fas fa-list-ul"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <div class="slidecontainer" style="width:150px;">
+                        <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+                    </div>
+                    <div>
+                        <i class="fas fa-expand-alt"></i>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

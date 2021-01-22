@@ -1,0 +1,78 @@
+@media screen and (max-width:1940px){
+    .carousel-container img{
+        height: 300px;
+        width: 300px;
+        border-radius: 20px;
+    }
+
+    #img-02{
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .carousel-container img{
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
+    }
+
+    #img-02{
+        height: 250px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:1520px){
+    .recently-played-images img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .playlist-card{
+        height: auto;
+    }
+    #song-name{
+        width: 80px;
+
+    }
+}
+
+@media screen and (max-width:1300px){
+    .recently-played-images img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .playlist-card{
+        height: auto;
+    }
+    #song-name{
+        visibility: hidden;
+
+    }
+}
+
+@media screen and (max-width:1400px){
+    .left-div,
+    .left-div img,
+    .music-bar-text span,
+    .left-div span,
+    #artist-name,
+    .fa-heart, .fa-ban{
+        visibility: hidden;
+    }
+
+    .right-div,.right-div i{
+        visibility: hidden;
+    }
+
+    .eng-container{
+        display: inline-block;
+    }
+
+    .eng-container img{
+        height: 50px;
+        width: 50px;
+    }
+}
